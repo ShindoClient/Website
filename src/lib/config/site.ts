@@ -3,14 +3,15 @@ import { m } from '#lib/paraglide/messages.js';
 
 /** Basic site info. Used by the navbar, footer and SEO tags. */
 export const site = {
-	name: 'My Site',
+	name: 'Shindo Client',
 	/** Production URL, used for canonical/alternate links. No trailing slash. */
-	url: 'https://example.com'
+	url: 'https://shindoclient.com'
 };
 
 /** Main navigation. `href` must be a path without a locale prefix. */
 export const navItems = [
 	{ href: '/', label: () => m.nav_home() },
+	{ href: '/download', label: () => m.nav_download() },
 	{ href: '/about', label: () => m.nav_about() }
 ] as const;
 
